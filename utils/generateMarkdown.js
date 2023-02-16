@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![GitHub license](https://img.shields.io/badge/License-${license}-lightblue.svg)`
+    return `![GitHub license](https://img.shields.io/badge/license-${license}-lightblue.svg)`
   }
   return ''
 }
@@ -37,54 +37,54 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-    ## Description
+## Description
 
-    ${data.description}
+${data.description}
 
-    ## Table of Contents
+## Table of Contents
 
-    * [Installations](#installation)
-    * [Usage](#usage)
-    ${renderLicenseLink(data.license)}
-    * [Contributors](#contributors)
-    * [Test](#test)
-    * [Questions](#questions)
+* [Installations](#installation)
+* [Usage](#usage)
+${renderLicenseLink(data.license)}
+* [Contributors](#contributors)
+* [Test](#test)
+* [Questions](#questions)
 
-    ## Installations
+## Installations
 
-    Please install dependencies within the terminal by typing the following in the command line:
+Please install dependencies within the terminal by typing the following in the command line:
 
-    \`\`\`
-    ${data.installation}
-    \`\`\`
+\`\`\`
+${data.installation}
+\`\`\`
 
-    ## Usage
+## Usage
 
-    ${data.usage}
+${data.usage}
 
-    ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
 
-    ## Contributors
+## Contributors
 
-    ${data.contributors}
+${data.contributors}
 
-    ## Questions
+## Questions
 
-    If you have any questions, please contact me at ${data.email}
+If you have any questions, please contact me at ${data.email}
 
-    GitHub URL: [${data.github}](https://github.com/${data.github}/)
+GitHub URL: [${data.github}](https://github.com/${data.github}/)
 
-    ## Tests
+## Tests
 
-    To run tests, please type the following in the command line:
+To run tests, please type the following in the command line:
 
-    \`\`\`
-    ${data.test}
-    \`\`\`
+\`\`\`
+${data.test}
+\`\`\`
 
-    `;
+`;
 }
 
 module.exports = generateMarkdown;
