@@ -1,6 +1,6 @@
 # Nux Legere XIV
 
-## Video Submission Link: https://watch.screencastify.com/v/syA3mmEv3TWHLNUciIYW
+## Video Submission Link: https://drive.google.com/file/d/1y4l5v2rfN3AEm1eDsl6piUG6q0upXC8M/view
 
 ## Description
 
